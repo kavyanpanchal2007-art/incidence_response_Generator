@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.dashboard__main {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.dashboard__content {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px;
+  animation: soc-rise 260ms ease both;
+}
+
+.dashboard__content > h1 {
+  margin: 0 0 24px;
+  font-size: clamp(26px, 3vw, 38px);
+}
+
+@media (max-width: 920px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard__content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .dashboard__content {
+    padding: 16px;
+  }
+}

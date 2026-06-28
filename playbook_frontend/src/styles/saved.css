@@ -1,0 +1,91 @@
+.saved { display: grid; gap: 24px; }
+
+.saved__header { display: grid; gap: 8px; }
+
+.saved__eyebrow {
+  margin: 0;
+  color: var(--cyan);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.saved h1, .saved h2 { margin: 0; }
+.saved h1 { font-size: 28px; font-weight: 600; }
+.saved h2 { font-size: 18px; }
+
+.saved__error, .saved__status { 
+  margin: 0; 
+  border-radius: var(--radius); 
+  padding: 12px 16px; 
+  font-size: 13px; 
+}
+
+.saved__error { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: #fca5a5; }
+.saved__status { background: var(--card2); color: var(--cyan); }
+
+.saved__grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
+  gap: 20px; 
+}
+
+.saved__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.saved__card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-soft);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+}
+
+.saved__card header { 
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between; 
+  gap: 16px; 
+  border-bottom: 1px solid var(--border-soft); 
+  padding-bottom: 12px; 
+}
+
+.saved__card header p { 
+  margin: 6px 0 0; 
+  color: var(--green); 
+  font-size: 13px; 
+  font-weight: 700; 
+}
+
+.saved__actions { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.saved__actions button {
+  flex: 1;
+  text-align: center;
+  border: 1px solid var(--border-soft);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--panel-soft);
+  color: var(--text);
+  font-weight: 600;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.saved__actions button:hover { 
+  background: rgba(6, 182, 212, 0.1); 
+  border-color: var(--cyan); 
+  color: var(--cyan); 
+}
