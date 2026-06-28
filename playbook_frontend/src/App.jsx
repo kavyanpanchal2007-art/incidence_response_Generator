@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Community from "./pages/Community";
 import Generator from "./pages/Generator";
-import Auth from "./pages/Auth";
+import Auth from "./pages/auth";
 import Saved from "./pages/Saved";
 import "./styles/theme.css";
 import "./App.css";
