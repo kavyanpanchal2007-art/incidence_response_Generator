@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar__brand">Incident Response AI</div>
+      <div className="navbar__brand">Incident Response Generator</div>
 
       <div className="navbar__user">
         {user ? (

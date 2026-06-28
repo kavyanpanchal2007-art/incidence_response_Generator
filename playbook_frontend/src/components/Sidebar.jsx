@@ -3,7 +3,7 @@ import "../styles/sidebar.css";
 function Sidebar({ currentPage, pages, onNavigate }) {
   return (
     <aside className="sidebar">
-      <div className="sidebar__title">Dashboard</div>
+      <div className="sidebar__title">Pages</div>
 
       <nav className="sidebar__nav">
         {Object.entries(pages).map(([key, label]) => (
