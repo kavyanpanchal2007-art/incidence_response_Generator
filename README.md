@@ -23,18 +23,18 @@ Ensure you have Node.js and Git installed on your system.
 Installation
 Clone the repository:
 
-Bash
+@
 git clone https://github.com/kavyanpanchal2007-art/incidence_response_Generator.git
 Navigate to the frontend directory:
 
-Bash
+@
 cd playbook_frontend
 Install dependencies:
 
-Bash
+@
 npm install
 Run the application:
 
-Bash
+@
 npm run dev
 
